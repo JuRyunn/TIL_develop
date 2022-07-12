@@ -16,4 +16,4 @@
 ##### 게임 제작
 - [Sokovan: 20220711](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220711.md)
 - [Sokovan: 20220712](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220712.md)
-- [Sokovan: 20220713](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220713.md)
+-- [Sokovan: 20220713](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220713.md)
