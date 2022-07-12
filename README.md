@@ -14,6 +14,4 @@
 - [클래스/오브젝트](https://github.com/JuRyunn/TIL/blob/main/Unity/220711_%ED%81%B4%EB%9E%98%EC%8A%A4&%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8.md)
 
 ##### 게임 제작
-- [Sokovan: 20220711](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220711.md)
-- [Sokovan: 20220712](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220712.md)
--- [Sokovan: 20220713](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220713.md)
+- [Sokovan: 20220711](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220711.md)- [Sokovan: 20220712](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220712.md)- [Sokovan: 20220713](https://github.com/JuRyunn/Sokovan/blob/main/TIL/20220713.md)
