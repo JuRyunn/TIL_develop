@@ -9,6 +9,7 @@
 - 무언가를 로딩하느라 기다릴 필요가 없으며 화면 전환 또한 빠르다.
 
 #### HTML
-![image](https://user-images.githubusercontent.com/79950504/179357982-c56c4d9c-6f28-42ae-831d-c172e90f705f.png)
-- 웹사이트의 경우 
+![image](https://user-images.githubusercontent.com/79950504/179441697-143220cb-9881-4a00-b3fb-797037791a4a.png)  
+- 웹사이트의 경우 링크나 버튼을 클릭하면 그 요청이 서버에 전송되고 새로운 html 페이지가 브라우저로 전송되어 화면에 보여지는 방식이였다.
+- 이러한 방식을 차용했기 때문에 불편하였으며 무거웠다.
 
