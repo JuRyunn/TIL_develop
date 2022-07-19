@@ -28,7 +28,7 @@
 - [코루틴](https://github.com/JuRyunn/TIL/blob/main/Unity/220719_%EC%BD%94%EB%A3%A8%ED%8B%B4.md)
 
 #### 게임제작
-- [BOWLING](https://github.com/JuRyunn/Amazing-Bowling)
+- [AMAZING BOWLING](https://github.com/JuRyunn/Amazing-Bowling)
 
 
 <br>
