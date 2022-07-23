@@ -28,7 +28,7 @@ const myFnc= () => {
 
 ![image](https://user-images.githubusercontent.com/79950504/180606233-20d09ff8-6b88-4d6f-83d8-e4f255315b56.png)
 - Undefined가 발생하는 이유 : 어떠한 인수도 전달되지 않았기 때문이다.
-- 해당 함수 (printMyName)에 인수로 임의의 값을 전달하면 정상적으로 출력된다. 
+- 해당 함수 (printMyName)에 예를 들어 인수로 'Max' 값을 전달하면 console 창에 'Max'가 출력된다.
 
 #### Arrow Function
 ```JavaScript
