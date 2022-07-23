@@ -12,3 +12,13 @@
 
 ![image](https://user-images.githubusercontent.com/79950504/180605969-eb2acc46-9339-45cb-9c48-8597bca3c338.png)
 - 에러가 발생하는 이유 : 상수 변수에 값을 재할당하려고 했기 때문이다.
+
+<br>
+
+### Arrow Function (화살표 함수)
+- JavaScript 함수를 생성하는 또 다른 구문이다.
+```JavaScript
+function myFnc(){
+
+}
+```
