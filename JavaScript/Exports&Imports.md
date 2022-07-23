@@ -28,8 +28,10 @@ export const baseData= 10;
 ```JavaScript
 import person from './person.js'
 import prs from './person.js'
+
 import {baseData} from './utlity.js'
 import {clean} from './utility.js'
+// import {baseData, clean} 으로 한 문장에 사용 가능
 ```
 - 위의 Person.js, Utlity.js에서 무엇인가를 가져오기 위해 "Import"문이 필요하다.
 - Person.js에서 person을 import하면 원하는대로 객체의 이름을 지정할 수 있다.
