@@ -35,7 +35,7 @@
 
 #### :pushpin: JavaScript / React
 ##### JavaScript
-- []()
+- [let/const](https://github.com/JuRyunn/TIL/blob/main/JavaScript/let&const.md)
 
 
 ##### React 
