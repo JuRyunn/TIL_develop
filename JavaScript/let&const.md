@@ -39,3 +39,21 @@ const printMyName= (name) => {
 printMyName('Max');
 ```
 - 마찬가지로 'Max'가 출력되는 것을 볼 수 있다.
+
+```JavaScript
+const printMyname= name => {
+  console.log(name);
+}
+
+printMyName('Max');
+```
+- 인수가 하나인 경우에 사용할 수 있는 구문이다.
+
+```JavaScript
+const printMyName= (name, age) => {
+  console.log(name, age);
+}
+
+printMyName('Max', 20);
+```
+- 인수가 하나 이상인 경우에 출력 함수에 위와 같이 입력해야한다.
