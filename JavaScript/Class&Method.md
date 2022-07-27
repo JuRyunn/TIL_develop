@@ -33,3 +33,29 @@ class Person extends Master
 ![image](https://user-images.githubusercontent.com/79950504/181182979-a50b818d-3ad7-4d9c-84b2-98aecfdf1bb1.png)
 - extand 키워드를 통해 클래스를 상속받아 확장할 수 있다.
 - 다른 클래스를 확장하고 생성자를 실행하는 경우엔 아니지만, 만약 그렇다면 생성자 함수 내에 super() 메소드를 추가해야한다.
+
+<br>
+<br>
+
+##### Propertie
+- 클래스와 객체에 추가되는 변수를 의미한다.
+```JavaScript
+constructor() {
+  this.myProperty= 'value'
+}
+```
+```JavaScript
+  myProperty= 'value'
+  // 최신 JS는 클래스에 바로 프로퍼티를 할당할 수 있다.
+```
+
+
+##### Method
+- 클래스와 객체에 추가되는 함수를 의미한다.
+```JavaScript
+myMethod() {...}
+```
+```JavaScript
+myMethod= () => {...}
+// 프로퍼티 값으로 화살표 함수를 사용하기 때문에 this 키워드를 사용하지 않아도 된다.
+```
