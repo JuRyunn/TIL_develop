@@ -59,3 +59,35 @@ myMethod() {...}
 myMethod= () => {...}
 // 프로퍼티 값으로 화살표 함수를 사용하기 때문에 this 키워드를 사용하지 않아도 된다.
 ```
+
+
+<br>
+<br>
+
+
+```JavaScript
+class Human{
+  gender= 'male';
+ 
+  printGender = () => {
+    console.log(this.gender);
+  }
+}
+
+
+class Person extends Human {
+    name= 'Max';
+    gender= 'female';
+  
+  
+  printMyName = () => {
+    console.log(this.name);
+  }
+}
+
+const person= new Person();
+person.printMyName();
+person.printGender();
+```
+
+
