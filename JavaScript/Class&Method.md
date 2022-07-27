@@ -64,7 +64,7 @@ myMethod= () => {...}
 <br>
 <br>
 
-
+#### ES7
 ```JavaScript
 class Human{
   gender= 'male';
