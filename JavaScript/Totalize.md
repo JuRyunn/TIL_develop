@@ -82,6 +82,7 @@ import * as upToMine from './example/my/path/file.js'; // upToMine은 모든 exp
 - 클래스는 constructor 함수와 prototypes를 대체하는 기능이다.
 - JS 객체에 bluePrints를 정의할 수 있다.
 ```JavaScript
+// 클래스뿐만 아니라 해당 클래스의 property (=name)가 정의된다. 
 const Person {
   constructor() {
    this.name= 'SMU';
@@ -89,9 +90,9 @@ const Person {
 }
 
 const person= new Person();
-console.log(person.name);
+console.log(person.name);  
 
-// 클래스뿐만 아니라 해당 클래스의 property (=name)가 정의된다. 
+
 
 // 위의 구문은 비효율적이기 때문에 다음과 같은 구문을 사용한다.
 class Person {
@@ -110,7 +111,7 @@ class Person {
 }
 
 const person= new Person();
-person.printName();
+person.printName();  
 
 // 또 다른 방법
 class Person {
@@ -121,7 +122,7 @@ class Person {
 }
  
 const person = new Person();
-person.printName();
+person.printName();  
 
 // 클래스 사용시 inheritance 사용이 가능하다.
 class Human {
