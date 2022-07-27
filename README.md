@@ -35,6 +35,7 @@
 - [let/const](https://github.com/JuRyunn/TIL/blob/main/JavaScript/let&const.md)
 - [Export/Import](https://github.com/JuRyunn/TIL/blob/main/JavaScript/Exports&Imports.md)
 - [Class/Properties/Method](https://github.com/JuRyunn/TIL/blob/main/JavaScript/Class&Method.md)
+- [Spread/Rest Operators](https://github.com/JuRyunn/TIL/blob/main/JavaScript/Spread&Rest.md)
 
 ##### React 
 - [React란 무엇인가](https://github.com/JuRyunn/TIL/blob/main/React/React%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.md)
