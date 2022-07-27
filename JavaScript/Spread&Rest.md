@@ -21,3 +21,12 @@ function sortArgs(...args){
 // sortArgs는 매개변수를 무한대로 받는다. (매개변수의 갯수에 무관하게 ...args로 적는다)
 // 매개변수의 목록에 배열 메소드를 적용하거나 원하는 방법으로 매개변수를 저장할 수 있다.
 ```
+
+
+<br>
+<br>
+
+
+##### Spread Example
+![image](https://user-images.githubusercontent.com/79950504/181288619-35fbfd3a-2391-49f4-a307-0cf1dec08395.png)  
+- ... 없이 실행했다면 [[1, 2, 3], 4]로 표현되었을 것이다.
