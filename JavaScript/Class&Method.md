@@ -6,6 +6,7 @@ class Person {
 ```
 - 객체를 위한 핵심이다.
 - class 키워드로 정의되며 프로퍼티와 메소드를 가질 수 있다.
+- React에서 컴포넌트를 생성할 때 사용한다.
 
 ##### Usage
 ```JavaScript
