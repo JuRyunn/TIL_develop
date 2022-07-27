@@ -3,7 +3,6 @@
 - 스프레드 연산자와 비슷하지만 스프레드는 모든 원소와 프로퍼티를 가져와 새 배열 혹은 객체에 전달하지만 Destructuring은 원소나 프로퍼티를 하나만 가져와서 변수에 저장한다.
 
 <br>
-<br>
 
 ##### Array Destructuring Example
 ```JavaScript
