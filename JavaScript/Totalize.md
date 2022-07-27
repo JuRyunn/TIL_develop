@@ -51,3 +51,26 @@ const returnMe= dog => {
   return dog;
 }
 ```
+
+
+<br>
+
+
+#### Exports&Imports
+- React, JS에서 모듈이라 불리는 여러 JS 파일에 코드를 분할한다. (각 file/ 모듈의 목적을 명확하게 하며 관리가 용이하기 때문)
+- 다른 파일의 기능에 접근하기 위해 export (available 하기 위해) 및 Import (access 확보하기 위해)가 필요하다.  
+
+```JavaScript
+// export엔 두가지 유형이 있는데 default와 named이다.
+
+default => export default ...;
+named => export const someData= ...;
+
+import myNameChoice from './example/my/path/file.js'; //default exports를 import
+
+import {ExampleData} from './example/my/path/file.js'; // Named export는 이름으로 import 되어야 한다.
+// 파일 하나는 하나의 default, 무한한 named export를 가질 수 있다. 
+
+// named export를 import할 경우 한번에 import 할 수 있다.
+import * as upToMine from './example/my/path/file.js'; // upToMine은 모든 exported 변수, 함수를 하나의 JS 객체에 모은다.
+```
