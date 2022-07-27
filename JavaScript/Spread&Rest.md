@@ -27,6 +27,21 @@ function sortArgs(...args){
 <br>
 
 
-##### Spread Example
+##### Spread Operator Example
 ![image](https://user-images.githubusercontent.com/79950504/181288619-35fbfd3a-2391-49f4-a307-0cf1dec08395.png)  
-- ... 없이 실행했다면 [[1, 2, 3], 4]로 표현되었을 것이다.
+- ...number가 아닌 number로 실행했다면 [[1, 2, 3], 4]로 표현되었을 것이다.
+- 간단하게 배열을 복사하거나 안전하게 이전 객체를 복사해서 객체에 프로퍼티를 더하는 것이 가능하다.
+
+<br>
+
+![image](https://user-images.githubusercontent.com/79950504/181289454-da55106b-47ec-4131-9307-876d69edd337.png)
+- 앞에 나온 person 객체를 취해 스프레드 연산자가 있는 newPerson에 전달해주는 것이 스프레드 연산자이다.
+
+<br>
+<br>
+
+
+##### Rest Operator Example
+
+- 사용 빈도는 다소 낮으나 함수에서 사용 가능하다.
+- ...args는 레스트 연산자로 사용되었으며 매개변수를 배열에 통합하였기 때문에 배열 메소드를 filter()처럼 사용이 가능하고 filter는 배열에서 전달되는 모든 원소들에 대해 함수를 실행한다.
