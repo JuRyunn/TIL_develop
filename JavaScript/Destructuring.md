@@ -14,7 +14,6 @@ console.log(b) // Max 출력
 - 배열을 새롭게 생성하는 것 같지만 변수 a와 b에 각각 Hello와 Max를 할당한 것이다.
 - 객체의 Destructuring도 배열을 Destructuring하여 가져올 프로퍼티의 순서를 정하는 곳에 중괄호를 넣은 구문을 사용한다.
 
-<br>
 
 ##### Object Destructuring Example
 ```JavaScript
@@ -23,4 +22,10 @@ console.log(name) // Max 출력
 console.log(age) // undefined 출력 -> 객체에서 age를 추출하지 않았기 때문이다.
 ```
 - 왼쪽에 {name}을 넣고 오른쪽 객채의 name 프로퍼티를 대상으로 한다.
+
+
+<br>
+<br>
+
+![image](https://user-images.githubusercontent.com/79950504/181295002-ddd1b2f2-6577-44d8-944d-1f272eb424f4.png)
 
