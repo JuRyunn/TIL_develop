@@ -112,7 +112,8 @@ class Person {
 
 const person= new Person();
 person.printName();  
-
+ 
+ 
 // 또 다른 방법
 class Person {
     name = 'SMU';
@@ -123,6 +124,7 @@ class Person {
  
 const person = new Person();
 person.printName();  
+
 
 // 클래스 사용시 inheritance 사용이 가능하다.
 class Human {
