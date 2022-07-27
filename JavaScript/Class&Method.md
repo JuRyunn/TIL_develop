@@ -62,7 +62,6 @@ myMethod= () => {...}
 
 
 <br>
-<br>
 
 #### ES7
 ```JavaScript
