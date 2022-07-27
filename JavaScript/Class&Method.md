@@ -20,6 +20,7 @@ class Person extends Master
 - 다른 클래스에 있는 프로퍼티와 메소드를 상속한다면 잠재적으로 새로운 프로퍼티와 메소드를 추가할 수 있다.
 
 <br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/79950504/181182238-a93c7ca5-483e-4368-b558-ccb94205e236.png)
 - this 키워드로 프로퍼티를 설정할 수 있다. 
