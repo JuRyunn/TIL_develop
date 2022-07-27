@@ -100,7 +100,8 @@ class Person {
 }
 
 const person= new Person();
-console.log(this.name);
+console.log(this.name);  
+
 
 // 메소드를 정의하는 것 또한 가능하다.
 class Person {
@@ -143,5 +144,70 @@ person.printName();
 console.log(person.species);
 ```
 
+<br>
+<br>
 
 
+#### Spread&Rest Operator
+- 두개 모두 같은 구문을 사용한다. (...연산자)
+- SpreadOperator는 배열에서 요소를 가져오거나 (= 배열을 요소의 리스트로 분해) 객체에서 속성을 가져온다.
+- SpreadOperator는 배열과 객체를 복제하는데 유용하다.
+- reference 유형이기 때문에 안정적으로 복사하는게 어려울 수 있다. (복사된 원본에 결함 발생 방지)
+
+```JavaScript
+// First Example
+const FirstArray= [1, 2, 3];
+const SecondArray= [...FirstArray, 4, 5]; // [1, 2, 3, 4, 5] 출력
+
+// Spread Operator 사용
+const FirstArray= {
+  name= 'SMU'
+};
+
+const SecondArray= {
+  ...FirstArray,
+  num: 7
+}; // {name: 'SMU', num: 7 } 출력
+```
+
+<br>
+<br>
+
+#### Destructuring
+- 배열이나 객체의 값에 쉽게 접근할 수 있으며 변수에 할당할 수 있다.
+```JavaScript
+// Array Example
+const Array = [1, 2, 3];
+const [test1, test2] = array;
+console.log(test1); // 1 출력
+console.log(test2); // 2 출력
+console.log(Array); // [1, 2, 3] 출력  
+
+
+// Object Example
+const Object = {
+    name: 'SMU',
+    age: 7
+}
+const {name} = Object;
+console.log(name); // 'SMU' 출력
+console.log(age); // undefined 출력
+console.log(Object); // {name: 'SMU', age: 7} 출력  
+
+
+// 인자를 가진 함수 처리
+// 함수 내 name만을 출력하고 싶지만 person 객체를 보내고 있다.
+// Object.name을 함수 내에서 호출해야한다.
+const printName = (personObj) => {
+    console.log(personObj.name);
+}
+printName({name: 'SMU', age: 7}); // 'SMU' 출력  
+
+
+// Object.name을 destructuring으로 압축
+// name propery를 가져와 name이라는 이름의 변수/인수에 저장하고 함수 본문에서 사용이 가능
+const printName = ({name}) => {
+    console.log(name);
+}
+printName({name: 'SMU', age: 7}); // 'SMU' 출력  
+```
