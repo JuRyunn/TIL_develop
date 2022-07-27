@@ -74,3 +74,71 @@ import {ExampleData} from './example/my/path/file.js'; // Named export는 이름
 // named export를 import할 경우 한번에 import 할 수 있다.
 import * as upToMine from './example/my/path/file.js'; // upToMine은 모든 exported 변수, 함수를 하나의 JS 객체에 모은다.
 ```
+
+<br>
+<br>
+
+#### Class
+- 클래스는 constructor 함수와 prototypes를 대체하는 기능이다.
+- JS 객체에 bluePrints를 정의할 수 있다.
+```JavaScript
+const Person {
+  constructor() {
+   this.name= 'SMU';
+  }
+}
+
+const person= new Person();
+console.log(person.name);
+
+// 클래스뿐만 아니라 해당 클래스의 property (=name)가 정의된다. 
+
+// 위의 구문은 비효율적이기 때문에 다음과 같은 구문을 사용한다.
+class Person {
+  name= 'SMU';
+}
+
+const person= new Person();
+console.log(this.name);
+
+// 메소드를 정의하는 것 또한 가능하다.
+class Person {
+  name= 'SMU';
+  printName() {
+    console.log(this.name);
+  }
+}
+
+const person= new Person();
+person.printName();
+
+// 또 다른 방법
+class Person {
+    name = 'SMU';
+    printName = () => {
+        console.log(this.name);
+    }
+}
+ 
+const person = new Person();
+person.printName();
+
+// 클래스 사용시 inheritance 사용이 가능하다.
+class Human {
+    species = 'human';
+}
+ 
+class Person extends Human {
+    name = 'SMU';
+    printName = () => {
+        console.log(this.name);
+    }
+}
+ 
+const person = new Person();
+person.printName();
+console.log(person.species);
+```
+
+
+
