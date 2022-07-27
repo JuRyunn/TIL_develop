@@ -27,6 +27,7 @@ class Person extends Master
 - 클래스를 NEW Person() 메소드를 사용해 상수 person에 저장한 후 출력한다.
 - 손쉽게 클래스를 사용할 수 있다.
 
+<br>
 
 ![image](https://user-images.githubusercontent.com/79950504/181182979-a50b818d-3ad7-4d9c-84b2-98aecfdf1bb1.png)
 - extand 키워드를 통해 클래스를 상속받아 확장할 수 있다.
