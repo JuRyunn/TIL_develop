@@ -31,3 +31,10 @@ address public addr= 0x358AA13c52544ECCEF6B0ADD0f801012ADAD5eE3;
 <br>
 
 - int / uint: -가 있는지 없는지에 따라 차이가 발생한다.
+```solidity
+//int8= -2^7 ~ 2^7 -1 
+int8= public it= 4;
+
+//uint8= 0 ~ 2^8 -1
+uint256 public uit= 132213;
+```
