@@ -15,8 +15,8 @@
 
 
 #### ERROR!
-![image](https://user-images.githubusercontent.com/79950504/182084985-f3d12ef3-8401-495b-b1f2-2c7853ff19be.png)
-- 컴파일 시 에러발생하는 경우 위와 같이 해결한다.
+![image](https://user-images.githubusercontent.com/79950504/182085960-717afe9d-8636-40f3-9ed5-53c56a68208f.png)
+- 컴파일 시 에러발생하는 경우 설정 > General settings > 체크해제
 
 #### 배포
 ![image](https://user-images.githubusercontent.com/79950504/182085718-b3664b39-eb4d-4540-9377-283038aceeeb.png)
