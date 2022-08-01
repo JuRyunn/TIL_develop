@@ -18,7 +18,7 @@ bytes4 public bt= 0x1234567;
 bytes public bt2= "STRING";
 ```
 
-- address: 이더를 송수신하는 계좌번호라고 생각하면된다. / SmartContract마다 배포될때 생성된다.
+- address: 이더를 송수신하는 계좌번호라고 생각하면된다. / SmartContract마다 배포될때 생성된다.  
 ![image](https://user-images.githubusercontent.com/79950504/182088379-1a1e2068-2c25-4534-adb7-63e231f86d9e.png)
 ```solidity
 address public addr= 0x358AA13c52544ECCEF6B0ADD0f801012ADAD5eE3;
