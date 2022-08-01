@@ -46,5 +46,5 @@
 ##### Solidity 
 - [Basic](https://github.com/JuRyunn/TIL/blob/main/Solidity/Day1.md)
 - [DataType](https://github.com/JuRyunn/TIL/blob/main/Solidity/DataType.md)
-
+- [](https://github.com/JuRyunn/TIL/blob/main/Solidity/gas%26ether.md)
 
