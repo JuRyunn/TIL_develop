@@ -19,6 +19,8 @@
 - 컴파일 시 에러발생하는 경우 위와 같이 해결한다.
 
 #### 배포
-![image](https://user-images.githubusercontent.com/79950504/182085399-f0ced9a9-cc9b-496a-9395-ccb20651d750.png)
+![image](https://user-images.githubusercontent.com/79950504/182085718-b3664b39-eb4d-4540-9377-283038aceeeb.png)
+- Hello SmartContarct가 배포된 것을 확인할 수 있다.
+- hi를 클릭하면 Hello Solidity가 출력된다.
 
 
