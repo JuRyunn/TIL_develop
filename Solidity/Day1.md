@@ -12,3 +12,13 @@
 ## 개발
 - [Remix IDE](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js)
 - 브라우저에서 솔리디티 프로그래밍 언어로 SmartContract 개발과 구축을 지원하는 IDE이며 사설망이나 테스트넷의 이더리움 블록체인에 연결해 SmartContract 배포와 테스트를 할 수 있다.
+
+
+#### ERROR!
+![image](https://user-images.githubusercontent.com/79950504/182084985-f3d12ef3-8401-495b-b1f2-2c7853ff19be.png)
+- 컴파일 시 에러발생하는 경우 위와 같이 해결한다.
+
+#### 배포
+![image](https://user-images.githubusercontent.com/79950504/182085399-f0ced9a9-cc9b-496a-9395-ccb20651d750.png)
+
+
