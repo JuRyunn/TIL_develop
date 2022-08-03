@@ -102,12 +102,37 @@ string private a2= 5;
 - private처럼 오직 internal이 정의된 자기 contract에서만 가능하고 internal이 정의된 contract를 상속한다.
 - 상속받은 contract가 있을 때 internal에 정의된 contract에 접근이 가능하다.
 
+<br>
 
 ## 접근제한자2
 #### view
 - function 밖의 변수들을 읽을 수 있으며 변경이 불가능함.
+```solidity
+uint256 public a= 1;
+
+function read_a() public view returns(uint256) {
+  return a+2;
+  }
+}
+```
+
 
 #### pure
 - function 밖의 변수들을 읽지 못하고 변경 또한 불가능함.  
+```solidity
+uint256 public a= 1;
 
-※ view와 pure 둘 다 명시가 되지 않았을 경우 function 밖의 변수를 읽어 변경해야함.
+function read_a2() public pure returns(uint256) {
+  uint b= 1;
+  return 3+2+b;
+```
+
+#### view와 pure 둘 다 명시가 되지 않았을 경우
+-  function 밖의 변수를 읽어 변경해야함.
+``` solidity
+function read_a3() public returns(uint256) {
+  a= 13;
+  return a;
+  // a 값을 읽어왔고 변경하기 때문에 view, pure의 사용이 불가능하다.
+}
+```
