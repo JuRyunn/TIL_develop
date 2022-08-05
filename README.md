@@ -48,4 +48,5 @@
 - [DataType](https://github.com/JuRyunn/TIL/blob/main/Solidity/DataType.md)
 - [Gas/Ether](https://github.com/JuRyunn/TIL/blob/main/Solidity/gas%26ether.md)
 - [Functions](https://github.com/JuRyunn/TIL/blob/main/Solidity/function.md)
+- [Remix 다루기](https://juhuyunjjung.tistory.com/228)
 
