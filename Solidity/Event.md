@@ -66,6 +66,7 @@ contract Son is Father {
 ![image](https://user-images.githubusercontent.com/79950504/183257938-109badd8-c078-4a23-95be-4aa7ffed291f.png)
 - 2개의 event가 출력된것을 확인할 수 있다.
 
+<br>
 
 #### 상속의 순서
 - 맨 오른쪽(예: Father)부터 super를 통해 상속이 진행된다.
