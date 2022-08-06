@@ -67,3 +67,7 @@ contract Son is Father {
 - 2개의 event가 출력된것을 확인할 수 있다.
 
 
+### 상속의 순서
+
+
+
