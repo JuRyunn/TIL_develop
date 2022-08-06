@@ -68,7 +68,7 @@ contract Son is Father {
 
 <br>
 
-#### 상속의 순서
+## 상속의 순서
 - 맨 오른쪽(예: Father)부터 super를 통해 상속이 진행된다.
 ```solidity
 contract Father {
