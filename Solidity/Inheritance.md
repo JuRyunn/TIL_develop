@@ -24,6 +24,8 @@ contract Son is Father ("DIGIMON"){ // is 뒤에 상속 받고자 하는 contrac
 }
 ```
 
+<br>
+
 ## Overriding
 - 상위 클래스에서 가지고 있는 메소드를 하위 클래스에서 메소드에 재정의해 사용할 수 있는것을 의미한다. (= 덮어쓰기)
 ```Solidity
@@ -37,8 +39,12 @@ contract Father {
   } 
 }
 
-contract Son is Father("DIGIMON") {
+contract Son {
   uint256 public earning= 0;
+  
+  // 상속의 다른 방법
+  constructor() Father ("DIGIMON") { 
+  }
   
   function work() public {
     earning += 100;
@@ -51,3 +57,42 @@ contract Son is Father("DIGIMON") {
   }
 }
 ```
+
+<br>
+
+### 두개 이상의 SmartContract에 상속하기
+```Solidity
+contract Father {
+  uint256 public fatherMoney= 100;
+  
+  function getFatherName() public pure returns(string memory) {
+    retrun "ALEX";
+}
+
+  function getMoney() public view virtual returns(uint256) {
+    return fatherMoney;
+  }
+}
+
+contract Mother {
+  uint256 public fatherMoney= 100;
+  
+  function getMotherName() public pure returns(string memory) {
+    retrun "JAMIE";
+}
+
+  function getMoney() public view virtual returns(uint256) {
+    return motherMoney;
+  }
+}
+
+contract Son is Father, Mother {
+// n개의 SmartContract를 상속받거나 function이 같은 경우 Overring을 해줘야한다.
+
+  function getMoney() public view override(Father, Mother) returns(uint256) {
+    return fathermoney + motherMoney;
+  }
+}
+
+```
+
