@@ -15,3 +15,30 @@ contract eventExam {
 ![image](https://user-images.githubusercontent.com/79950504/183248121-dbb67a4f-13a7-41ca-9341-47c66602f98a.png)
 - event info가 Block에 각인되었음을 알 수 있다.
 - 언제든 info의 값을 가져와 사용이 가능하다.
+
+<br>
+
+
+## Index
+- event 내에서만 사용 가능한 키워드로 특정한 event의 값들을 가져올 때 사용한다.
+```solidity
+contract IndexExample {
+  
+  event numberTracker(uint256 num, string str);
+  event numberTracker2(uint256 indexed num, string str); // indexed를 통해 특정 이벤트 값을 가져올 수 있다.
+  
+  uint256 num= 0;
+  function PushEvent(string memory _str) public {
+    emit numberTracker(num, _str);
+    emit numberTracker2(num, _str);
+    num ++;
+  }
+}
+```
+
+<br>
+
+## Super
+- 함수를 오버라이딩 할 때 사용하며 원래의 함수를 가져온다.
+```solidity
+```
