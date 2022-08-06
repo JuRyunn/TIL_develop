@@ -41,4 +41,29 @@ contract IndexExample {
 ## Super
 - 함수를 오버라이딩 할 때 사용하며 원래의 함수를 가져온다.
 ```solidity
-```
+contract Father {
+  event FatherName(string name);
+  
+  // Example: who() function이 엄청나게 길다고 가정했을 경우 하나하나 써주는것은 불가능하다.
+  function who() public virtual {
+    emit FatherName("ALEX");
+    //emit fatherName("ALEX2");
+    //emit fatherName("ALEX3");
+    //emit fatherName("ALEX4");
+    //emit fatherName("ALEX5");
+    // ...
+  }
+}
+
+contract Son is Father {
+  event sonName(string name);
+  function who() public override { // who() function을 Father로부터 상속받음
+    super.who(); // super를 사용하여 FatherName 전체를 쉽게 가져올 수 있다.
+    emit FatherName("ALEX");
+  }
+}
+```  
+![image](https://user-images.githubusercontent.com/79950504/183257938-109badd8-c078-4a23-95be-4aa7ffed291f.png)
+- 2개의 event가 출력된것을 확인할 수 있다.
+
+
