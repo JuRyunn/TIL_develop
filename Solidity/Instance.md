@@ -23,7 +23,7 @@ contract B {
 }
 ```
 
-## Instance: constructor
+## constructor
 - 변수의 값을 초기화 하는 경우 주로 사용하는 생성자이다.
 - 처음 생성/배포/instance화 되는 경우 초기 변수 파라미터 값을 받고 SmartContract가 생성된다. 
 - 가스를 많이 소비하지만, SmartContract가 가볍다면 사용해도 무관하다. 
