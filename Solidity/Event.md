@@ -67,7 +67,30 @@ contract Son is Father {
 - 2개의 event가 출력된것을 확인할 수 있다.
 
 
-### 상속의 순서
+#### 상속의 순서
+- 맨 오른쪽(예: Father)부터 super를 통해 상속이 진행된다.
+```solidity
+contract Father {
+  event FatherName(string name);
+  function who() public virtual {
+    emit FatherName("ALEX");
+  }
+}
+
+contract Mother {
+  event MotherName(string name);
+  function who() public virtual {
+    emit MotherName("Alice");
+  }
+}
+
+contract Son is Father, Mother {
+  function who() public override(Father, Mother) {
+    super.who(); // Father, Mother의 who()를 오버라이딩한 형태에서 super를 통해 가져온다.
+  }
+}
+```
+![image](https://user-images.githubusercontent.com/79950504/183258232-64cec7ab-4730-4004-8563-17336cff55da.png)
 
 
 
