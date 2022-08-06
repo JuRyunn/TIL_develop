@@ -49,5 +49,6 @@
 - [DataType](https://github.com/JuRyunn/TIL/blob/main/Solidity/DataType.md)
 - [Gas/Ether](https://github.com/JuRyunn/TIL/blob/main/Solidity/gas%26ether.md)
 - [Functions](https://github.com/JuRyunn/TIL/blob/main/Solidity/function.md)
+- [Instance](https://github.com/JuRyunn/TIL/blob/main/Solidity/Instance.md)
 
 
