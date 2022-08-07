@@ -34,11 +34,46 @@ contract MappingExam {
 
 ## Array
 - 배열 내 값들을 추가, 삭제, 길이를 구할 수 있다.
-- Mapping에선 길이를 구할 수 없지만 Array는 구할 수 있다.
 - 배열의 장점 중 하나는 배열 내 값들을 한번씩 순회할 수 있다 => 하지만 Ddos 공격에 취약하다. (특정 배열을 악의적으로 무한반복 시키면, 가스비용과 ETH 네워크가 과부화 되기 때문)
 ```Solidity
 contract ArrayExam {
+   
+   // 배열의 타입 , [] , 접근제한자 , 배열명 기제
+   uint256[] public ageArray;
+   
+   // 배열 사전 정의 방법 | Length: 3
+   string[] public nameArray= ["A", "B", "C"];
+   
+   function AgeLength() public view returns(uint256) {
+      return ageArray.length;
+   }
 
+   // ex: 최초의 값 삽입 0 -> 50 | 1 -> 70 | Length: 2
+   function AgePush(uint256 _age) public {
+      ageArray.push(_age);
+   }
 
+   // 1 -> 70 | uint256= 70
+   function AgeGet(uint256 _index) public view returns(uint256) {
+      return ageArray[_index];
+   }
+
+   // 0 -> 50 | Length: 1
+   // pop을 사용하면 제일 최신 값이 지워진다 ->  배열의 값이 줄어든다.
+   function AgePop() public {
+      ageArray.pop();
+   }
+   
+   // 0 -> 0 | 1 -> 70 | Length: 2
+   // delete를 사용하면 원하는 index 값을 넣어 지우는 것이 가능하지만 
+   // 완전히 지워지는 것이 아니라 0으로 채워지는 것이고 Length는 그대로다.
+   function AgePop(uint256 _index) public {
+      delete ageArray[_index];
+   }
+   
+   // 0 -> 90 | 1 -> 70 | Length: 2 
+   function AgeChange(uint256 _index, uint256 _age) public {
+      ageArray[_index]= _age;
+   }
 }
 ```
