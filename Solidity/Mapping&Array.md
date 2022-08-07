@@ -77,3 +77,44 @@ contract ArrayExam {
    }
 }
 ```
+
+<br>
+
+## Mapping & Array 주의점
+```solidity
+contract lec19{
+   uint256 num = 89;
+   mapping(uint256 => uint256) numMap;
+   uint256[] numArray;
+   
+   function changeNum(uint256 _num) public{
+       num = _num;
+   }
+   function showNum() public view returns(uint256){
+      return num;
+   }
+   
+   function numMapAdd() public{
+       numMap[0] = num;
+   }
+   function showNumMap() public view returns(uint256){
+       return numMap[0];
+   }
+   function UpdateMap() public{
+       numMap[0] = num;
+   }
+   
+   function numArrayAdd() public{
+       numArray.push(num);
+   }
+   function showNumArray() public view returns(uint256){
+       return numArray[0];
+   }
+   function updateArray() public {
+       numArray[0] = num;
+   }   
+}
+```
+![image](https://user-images.githubusercontent.com/79950504/183281919-cd29cd10-4b29-4ca4-86e5-b3ebc07f1775.png)
+- Mapping과 Array는 Reference Type으로 저장하는 것이 아니라 당시의 값을 캡처해 그것을 저장하기 때문에 Num값을 변경해도 업데이트가 되지 않는 것이다
+- 변경된 값은 따로 업데이트 해주어야한다. ( = numMapAdd, update Array 참고 )
