@@ -52,3 +52,4 @@
 - [Inheritance](https://github.com/JuRyunn/TIL/blob/main/Solidity/Inheritance.md)
 - [Event](https://github.com/JuRyunn/TIL/blob/main/Solidity/Event.md)
 - [Mapping/Array](https://github.com/JuRyunn/TIL/blob/main/Solidity/Mapping&Array.md)
+- [Struct](https://github.com/JuRyunn/TIL/blob/main/Solidity/Struct.md)
