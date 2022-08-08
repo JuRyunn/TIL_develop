@@ -19,11 +19,25 @@ function revertNow() public pure {
 function requireNow() public pure {
     require(false, "occurred");
 }
-
 ```
 ![image](https://user-images.githubusercontent.com/79950504/183363386-b2946f09-c23c-4eb8-865f-9b9cc3fcab79.png)
 - asset와 revert/require의 gas값 차이.
 - assert는 비효율적이기 때문에 test 용도로 사용한다.
 
 <br>
+
+## require, revert에 if 사용
+```solidity
+function onlyAdults(uint256 _age) public pure returns (string memory) {
+    if(_age < 19) {
+        revert ("You are not allowed to pay for the cigarette");
+    }
+    return "Your payment is success";
+}
+
+function onlyAudlts2(uint256 _age) public pure returns(string memory) {
+    require(_age>19, "You are not allowed to pay for the cigarette);
+    return "Your payment is success";
+}
+```
 
