@@ -18,9 +18,8 @@ function revertNow() public pure {
 }
 
 ```
-![image](https://user-images.githubusercontent.com/79950504/183361271-e0378095-8c48-47cf-9dee-bb639073a457.png)
 ![image](https://user-images.githubusercontent.com/79950504/183361852-788c1610-9fa1-4637-8851-03034fbc9a5c.png)
-
+- asset와 revert의 gas값 차이.
 
 <br>
 
