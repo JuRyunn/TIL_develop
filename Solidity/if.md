@@ -19,6 +19,9 @@ else if { // if else if가 발동 안되면
 }
 ```
 
+<br>
+
+#### Case 1: if else
 ```solidity
 contract IfExam {
 
@@ -37,4 +40,24 @@ contract IfExam {
 ```
 ![image](https://user-images.githubusercontent.com/79950504/183348521-63a44a1c-efe4-4021-b606-383218b85473.png)  
 ![image](https://user-images.githubusercontent.com/79950504/183348472-b9516c94-ad87-4990-ad4e-bb366a5ed41b.png)
+
+<br>
+
+#### Case 2: if else if else
+```solidity
+function isIt5or3or1(uint256 _number) public returns(string memory) {
+  if(_number == 5) {
+    outcome = "yes it is 5";
+    return outcome;
+  } 
+  else if (_number == 3) {
+    outcome = "yes it is 3";
+    return outcome;
+  }
+  else {
+    outcome = "no it is not 5, 3 or 1";
+    return outcome;
+  }
+}
+```
 
