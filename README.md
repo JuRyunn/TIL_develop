@@ -19,7 +19,7 @@
 - [싱글톤](https://github.com/JuRyunn/TIL/blob/main/Unity/220719_%EC%8B%B1%EA%B8%80%ED%86%A4.md)
 - [코루틴](https://github.com/JuRyunn/TIL/blob/main/Unity/220719_%EC%BD%94%EB%A3%A8%ED%8B%B4.md)
 
-#### 게임제작
+#### Project
 - [SOKOVAN](https://github.com/JuRyunn/Sokovan)
 - [AMAZING BOWLING](https://github.com/JuRyunn/Amazing-Bowling)
 
