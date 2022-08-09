@@ -56,4 +56,4 @@
 - [conditional statements](https://github.com/JuRyunn/TIL/blob/main/Solidity/if.md)
 - [Iteration statements](https://github.com/JuRyunn/TIL/blob/main/Solidity/Iteration.md)
 - [ErrorHandler](https://github.com/JuRyunn/TIL/blob/main/Solidity/ErrorHandler.md)
-- [Payable/msg.value/ETH Send](https://github.com/JuRyunn/TIL/blob/main/Solidity/Payable&msg&Type.md)
+- [Payable/msg.value/Send ETH](https://github.com/JuRyunn/TIL/blob/main/Solidity/Payable&msg&Type.md)
