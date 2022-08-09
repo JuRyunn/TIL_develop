@@ -4,3 +4,10 @@
 
 ## msg.sender
 - SmartContract를 사용하는 주체이다.
+
+<br>
+
+#### Balance & msg.sender Example
+```solidity
+dfg
+```
