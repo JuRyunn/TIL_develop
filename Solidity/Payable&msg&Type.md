@@ -59,7 +59,7 @@ contract ETHSendExam {
 ![image](https://user-images.githubusercontent.com/79950504/183629766-15546f53-2182-42e0-a5b3-ad62b25f0b1f.png)
 - 위와 같은 방식으로 전송할 이더의 갯수를 기제해 ETH를 전송한다. (VALUE = msg.value= ETH)
 
-![image](https://user-images.githubusercontent.com/79950504/183631620-73e10dc4-f772-426c-a917-15278bc0c309.png)
+![image](https://user-images.githubusercontent.com/79950504/183632819-f6f4f7c2-52a5-423e-8b71-8bf7ffb015e0.png)
 - ETH 전송
 
 
