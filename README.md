@@ -55,3 +55,4 @@
 - [Struct](https://github.com/JuRyunn/TIL/blob/main/Solidity/Struct.md)
 - [conditional statements](https://github.com/JuRyunn/TIL/blob/main/Solidity/if.md)
 - [Iteration statements](https://github.com/JuRyunn/TIL/blob/main/Solidity/Iteration.md)
+- [ErrorHandler](https://github.com/JuRyunn/TIL/blob/main/Solidity/ErrorHandler.md)
