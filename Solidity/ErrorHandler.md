@@ -146,3 +146,22 @@ contract runner2 {
 }
 ```
 
+<br>
+
+#### 함수 return 값 변수 명시
+- return 값 변수를 명시해주면 변수가 여러개일 때 어떤 변수인지 기억하기 편리하다.
+```solidity
+contract returnExam {
+    function add(uint256 _num1, uint256 _num2) public pure returns (uint256) { // return명 없음
+       uint256 total= _num1 + _num2;
+       return total;
+    }
+    
+    function add2 (uint256 _num1, uint256 _num2) public pure returns (uint256 total) { // return명 정의 : total
+        total= _num1 + _num2; // return 명이 있다면,  total 변수 명을 새로 명시할 필요가 없다.
+        return total;
+    }
+ }
+        
+```
+
