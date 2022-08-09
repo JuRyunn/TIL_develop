@@ -56,19 +56,21 @@ catch Panic(uint errorCode) {...} // assert를 통해 생성된 에러가 발생
 
 #### 외부 SmartContract 함수를 부를 경우 try/catch
 ```solidity
-contract math{
+contract math {
     
-    function division(uint256 _num1,uint256 _num2) public pure returns (uint256){
+    // dividion: 256 함수를 받고 나눈다.
+    function division(uint256 _num1,uint256 _num2) public pure returns (uint256) {
         require(_num1<10,"num1 shoud not be more than 10");
         return _num1/_num2;
     }
 }
 
-contract runner{
+contract runner { // Math contract의 division 함수를 호출
     event catchErr(string _name,string _err);
     event catchPanic(string _name,uint256 _err);
     event catchLowLevelErr(string _name,bytes _err);
  
+    // instance
     math public mathInstance = new math() ;
     
     function playTryCatch(uint256 _num1, uint256 _num2) public returns(uint256,bool){
@@ -84,8 +86,62 @@ contract runner{
         } catch (bytes memory _errorCode) {
             emit catchLowLevelErr("LowlevelError",_errorCode);
             return(0,false);
-        }
+        }       
+    } 
+}
+```
+
+<br>
+
+#### 외부 SmartContract을 생성할 경우 try/catch
+```solidity
+contract character {
+    string private name;
+    uint256 private power;
+    constructor(string memory _name, uint256 _power) {
+        name = _name;
+        power = _power;
+    }
+}
+
+contract runner {
+    event catchOnly(string _name,string _err);
+    function playTryCatch(string memory _name, uint256 _power) public returns(bool successOrFail) {
         
+        try new character(_name,_power) {
+            return(true);
+        }
+        catch {
+            emit catchOnly("catch","ErrorS!!");
+            return(false);
+        }   
+    } 
+}
+```
+
+<br>
+
+#### 내부 SmartContract에서 함수를 호출할 경우 try/catch
+- 내부에서 try/catch를 사용하기 위해서는 this문이 필수적이다.
+```solidity
+contract runner2 {
+    function simple() public returns(uint256) {
+        return 4;
+    }
+    
+    event catchOnly(string _name,string _err);
+    function playTryCatch() public returns(uint256,bool) {
+        
+        try this.simple() returns(uint256 _value) {
+        // this는 현재 smartContract를 나타냄.
+        // this.simple() = SmartContract의 simple 함수
+        
+            return(_value,true);
+        }
+        catch {
+            emit catchOnly("catch","ErrorS!!");
+            return(0,false);
+        }   
     } 
 }
 ```
