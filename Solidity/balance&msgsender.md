@@ -30,7 +30,7 @@ contract BalanceMsgExam {
     }  
 }
 ```
-![image](https://user-images.githubusercontent.com/79950504/183672992-b4600d03-7e69-4545-9e10-828fb09fe7f1.png)
+![image](https://user-images.githubusercontent.com/79950504/183677534-29b42864-f392-4fc6-8dc8-00d6251c3453.png)
 
 <br>
 
