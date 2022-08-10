@@ -38,12 +38,38 @@ contract interfaceExam is ItemInfo { // interfaceExam SmartContract는 is를 통
 
 #### 장점
 - 재사용: 블록체인에 라이브러리가 배포되면, 다른 SmartContract에 적용이 가능하다.
-- 가스 소비 절약: 여러개의 SmartContract에서 공통으로 쓰이는 코드를 따로 라이브러리를 통해 배포하기 때문에 다른 SmartContract에 명시해주는 것이 아니라 라이브러리를 적용만 하면 되기 때문에 가스비가 절약된다.
+- 가스 소비 절약: 여러개의 SmartContract에서 공통으로 쓰이는 코드를 따로 라이브러리를 통해 배포하기 때문에 다른 SmartContract에 명시해주는 것이 아니라 라이브러리를 적용만 하면 되기 때문에 가스비가 절약된다. (SmartContract의 사이즈/길에 따라 가스 소비량이 증가하기 때문)
 - 데이터 타입 적용: 라이브러리의 기능들은 데이터 타입에 적용이 가능하기 때문에 조금 더 쉽게 사용할 수 있다.
 
 #### 단점
 - fallback 함수를 라이브러리 내에 정의하지 못하기 때문에 ETH를 가지고 있을 수 없다.
 - payable 함수 정의가 불가능하다.
 - 상속이 불가능하다
+
+
+```solidity
+// overflow
+// └> uint8= 0~255 -> 256을 넣는다고 가정 -> 한바퀴 돌아서 0 나옴
+
+library SafeMath { // SafeMath: overflow를 방지하는 라이브러리.
+    
+  function add(uint8 a, uint8 b) internal pure returns (uint8) {
+      require(a+b >= a, "SafeMath: addition overflow");
+      return a+b;
+    }
+}
+
+contract libraryExam {
+    using SafeMath for uint8;
+    uint8 public a;
+    
+  function becomeOverflow(uint8 _num1, uint8 _num2) public {
+      a= _num1.add(_num2); // overflow check
+      // a= safeMath.add(_num1, _num2) overflow check2
+  }
+}
+```
+![image](https://user-images.githubusercontent.com/79950504/183913213-ffd48f60-d825-49ef-83fa-f37a4397e008.png)
+
 
 
