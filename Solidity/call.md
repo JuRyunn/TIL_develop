@@ -52,7 +52,7 @@ contract callExam2 {
 
 <br>
 
-## abi
+## ABI
 - ETH 환경 내에서 SmartContract을 상호작용 시키는 표준방법.
 - 데이터가 코드화 되어있으며, 설명이 되어있다.
 - abi object 내에는 encodedWithSignature() 메소드가 있으며 해당 메소드로 외부 SmartContract의 함수를 호출한다.
