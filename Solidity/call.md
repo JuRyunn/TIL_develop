@@ -72,4 +72,32 @@ contract callExam2 {
 ![image](https://user-images.githubusercontent.com/79950504/183899752-c81da747-5662-4d94-a5b7-374a15824c5e.png)
 
 
+#### Example
+```solidity
+contract add {
+  uint256 public num= 0;
+  event Info(address _addr, uint256 _num);
+  
+  function plusOne() public {
+    num= num + 1;
+    emit Info(msg.sender, num);
+  }
+}
+
+contract caller {
+  uint256 public num= 0;
+  
+  function callNow(address _contractAddr) public payable {
+    (bool success, )= _contractAddr.call(abi.encodeWithSignature("plusOne()"));
+    require(success, "Failed to transfer ETH");
+  }
+  
+  function delcateCallNow(address _contractAddr) public payable {
+    (bool success, )= _contractAddr.delegatecall(abi.encodeWithSignature("pluseOne()"));
+    require(success, "Failed to transfer ETH");
+  }
+} 
+```
+
+
 
