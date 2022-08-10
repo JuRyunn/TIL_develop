@@ -60,3 +60,4 @@
 - [Balacne/msg.sender](https://github.com/JuRyunn/TIL/blob/main/Solidity/msgsender.md)
 - [Fallback/Receive](https://github.com/JuRyunn/TIL/blob/main/Solidity/fallback%26receive.md)
 - [Call](https://github.com/JuRyunn/TIL/blob/main/Solidity/call.md)
+- [Enum](https://github.com/JuRyunn/TIL/blob/main/Solidity/enum.md)
