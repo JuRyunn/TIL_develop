@@ -58,3 +58,18 @@ contract callExam2 {
 - abi object 내에는 encodedWithSignature() 메소드가 있으며 해당 메소드로 외부 SmartContract의 함수를 호출한다.
 ![image](https://user-images.githubusercontent.com/79950504/183800809-765c581f-9cc9-495d-90d7-09a07c67d42e.png)
 
+<br>
+
+## Delegate Call
+- msg.sender가 본래의 SmartContract 사용자를 나타낸다.
+- delegate call이 정의된 SmartContract (=caller)이 외부 Contract의 함수들을 마치 자신인것 처럼 사용한다. (실질적인 값 또한 caller에 저장)
+- 외부 SmartContract 그리고 caller SmartContract는 같은 변수를 가져야한다.
+
+#### call
+![image](https://user-images.githubusercontent.com/79950504/183897578-7065fa40-9219-4c15-8ec2-5502ac56d91a.png)
+
+#### delegate call
+![image](https://user-images.githubusercontent.com/79950504/183899752-c81da747-5662-4d94-a5b7-374a15824c5e.png)
+
+
+
