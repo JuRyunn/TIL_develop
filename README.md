@@ -61,3 +61,4 @@
 - [Fallback/Receive](https://github.com/JuRyunn/TIL/blob/main/Solidity/fallback%26receive.md)
 - [Call](https://github.com/JuRyunn/TIL/blob/main/Solidity/call.md)
 - [Enum](https://github.com/JuRyunn/TIL/blob/main/Solidity/enum.md)
+- [Interface/Library](https://github.com/JuRyunn/TIL/blob/main/Solidity/interface%26library.md)
