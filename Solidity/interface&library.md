@@ -46,7 +46,6 @@ contract interfaceExam is ItemInfo { // interfaceExam SmartContract는 is를 통
 - payable 함수 정의가 불가능하다.
 - 상속이 불가능하다
 
-#### library Example Code
 ```solidity
 // overflow
 // └> uint8= 0~255 -> 256을 넣는다고 가정 -> 한바퀴 돌아서 0 나옴
