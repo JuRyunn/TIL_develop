@@ -49,3 +49,12 @@ contract callExam2 {
 ```
 ![image](https://user-images.githubusercontent.com/79950504/183799923-60aa056b-0c87-4103-b9b2-d3adcd449a86.png)
 - 12와 3을 삽입하였을 경우 f가 출력된다 (16진수는0~f까지, 15번째 자리에 f가 써있는 것.) 
+
+<br>
+
+## abi
+- ETH 환경 내에서 SmartContract을 상호작용 시키는 표준방법.
+- 데이터가 코드화 되어있으며, 설명이 되어있다.
+- abi object 내에는 encodedWithSignature() 메소드가 있으며 해당 메소드로 외부 SmartContract의 함수를 호출한다.
+![image](https://user-images.githubusercontent.com/79950504/183800809-765c581f-9cc9-495d-90d7-09a07c67d42e.png)
+
