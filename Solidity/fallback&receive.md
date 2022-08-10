@@ -30,6 +30,61 @@ fallback() external payable {...} // payalbe을 씀으로써 ETH를 받고 함�
 receive() external payable {...} // ETH를 받고 난 후 행동.
 ```
 
+#### fallback Example
 ```solidity
+contract Bank {
+ event JustFallbackWithFunds(address _from, uint256 _value, string message);
+ 
+ // fallback 함수로 ETH를 받으며 외부에서 들어오기 때문에 external 사용.
+ // Bank SmartContract에 "HI"가 없기 때문에 fallback에 걸림
+ function() external payable {
+  emit JustFallbackWithFunds(msg.sender, msg.value, "JustFallbackWithFunds is called");
+  }
+}
 
+contract You{
+
+ // receive()
+ function DepositWithSend(address payable _to) public payable {
+  bool success= _to.send(msg.value);
+  require(success, "Failed");
+}
+
+ function DepositWithTransfer(address payable _to) public payable {
+  _to.transfer(msg.value);
+}
+
+ function DepositWithCall(address payable _to) public payable {
+  
+  // 0.7ver 이하
+  (bool sent, )= _to.call.value(msg.value)("");
+  require(sent, "Failed to send ETH");
+  
+  // 0.7ver 이상
+  // (bool sent, )= _to.call {value: msg.value}("");
+  // require(sent, "Failed to send ETH");
+  
+  // fallback()
+  function JustGiveMessage(address _to) {
+   
+   // 0.7ver 이하
+   (bool sent, )= _to.call("HI"); // call은 ETH 뿐만 아니라 함수도 보낼 수 있다.
+   require(sent, "Failed to send ETH");
+   
+   // 0.7ver 이상
+   // (bool success, )= _to.call("HI");
+   // require(success, "Failed to send ETH");
+   }
+   
+   function JustGiveMessageWithFunds(address payable _to) public payable {
+    
+    // 0.7ver 이하
+    (bool sent, )= _to.call.value(msg.value)("HI");
+    require(sent, "Failed to send ETH");
+    
+    // 0.7ver 이상
+    // (bool success, )= _to.call{value: msg.value} {"HI"};
+    // require (success, "Failed to send ETH");
+  }
+}
 ```
