@@ -25,6 +25,10 @@ conda env list
 
 - [Pycharm Install](https://www.jetbrains.com/ko-kr/pycharm/download/download-thanks.html?platform=windows&code=PCC)
 - Anaconda를 설치한 경로에 프로젝트를 생성해준다.
+- Python 콘솔을 통해 TensorFlow를 설치해준다.
+```cmd
+pip install tensorflow
+```
 
 
 <br>
