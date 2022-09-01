@@ -14,15 +14,15 @@
 
 ## 환경구성
 - [Anaconda package Download](https://www.anaconda.com/)
-- 설치경로는 간단하게 설정해주어야한다. cmd 창에서 추가 설치할 때 경로를 찾아가기 번거롭기 때문이다.
+- 설치경로는 간단하게 설정해주어야한다 -> cmd 창에서 추가 설치할 때 경로를 찾아가기 번거롭기 때문.
 #### cmd
 ```cmd
 conda --version
-conda create -n py38_64 python=3.8 anaconda
+conda create -n py39_64 python=3.8 anaconda
 conda env list
 ```
 
-
+- [Pycharm Install](https://www.jetbrains.com/ko-kr/pycharm/download/download-thanks.html?platform=windows&code=PCC)
 
 ```python
 ```
