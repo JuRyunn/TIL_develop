@@ -25,6 +25,12 @@ conda env list
 
 - [Pycharm Install](https://www.jetbrains.com/ko-kr/pycharm/download/download-thanks.html?platform=windows&code=PCC)
 
+
+<br>
+<br>
+
+## 실습
+#### 생성크기 측정하기
 ```python
 import matplotlib.pyplot as plt
 form sklearn.neighbors import KNeighborsClassfier
