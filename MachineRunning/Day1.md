@@ -31,7 +31,7 @@ conda env list
 <br>
 
 ## 실습
-#### 생크기 측정하기
+#### 생선 크기 측정하기
 ```python
 import matplotlib.pyplot as plt
 form sklearn.neighbors import KNeighborsClassfier
