@@ -14,6 +14,7 @@
 
 ## 환경구성
 - [Anaconda package Download](https://www.anaconda.com/)
+#### cmd
 ```cmd
 conda --version
 conda create -n py38_64 python=3.8 anaconda
