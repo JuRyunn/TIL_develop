@@ -9,5 +9,18 @@
 - 머신러닝의 한 분야로써 연속된 층(= Layer)에서 의미있는 표현을 배우는데 강점이 있으며 데이터로부터 표현을 학습하는 방식이다.
 - ex) 알파고
 
+
+<br>
+
+## 환경구성
+- [Anaconda package Download](https://www.anaconda.com/)
+```cmd
+conda --version
+conda create -n py38_64 python=3.8 anaconda
+conda env list
+```
+
+
+
 ```python
 ```
