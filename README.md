@@ -8,7 +8,7 @@
 #### Project
 - [Sokovan](https://github.com/JuRyunn/Sokovan)
 - [Amazing Bowling](https://github.com/JuRyunn/Amazing-Bowling)
-
+- [Palette](https://github.com/JuRyunn/UnityProject_Palette)
 
 <br>
 
