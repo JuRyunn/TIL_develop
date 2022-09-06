@@ -14,7 +14,7 @@
 
 ## :pushpin: JavaScript / React
 #### [JavaScript](https://github.com/JuRyunn/TIL_develop/tree/main/JavaScript)
-##### [React](https://github.com/JuRyunn/TIL_develop/tree/main/React)
+#### [React](https://github.com/JuRyunn/TIL_develop/tree/main/React)
 
 
 <br>
