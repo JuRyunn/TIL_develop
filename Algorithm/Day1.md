@@ -127,7 +127,7 @@ def gcd(a, b): # a가 b보다 작지 않아야함.
 - 충분한 테스트가 어느정도인지 애매함.
 - 알고리즘이 틀렸다는 것을 보여주기 위해 한가지 입력 사례로도 충분.
 
-#### 증멱적 분석 (Formal analysis, proving)
+#### 증명적 분석 (Formal analysis, proving)
 - 수학적인 증명.
 - 수학적 귀납법(math analysis, proving).
 - 증명이 매우 어려울 가능성 있음.
@@ -194,8 +194,8 @@ def gcd(a, b): # a가 b보다 작지 않아야함.
 <br>
 
 ## 리스트
-- 항목들이 순서대로 나열, 각 항목들은 위치를 가짐.
-![image](https://user-images.githubusercontent.com/79950504/188536126-879dc9b7-9db8-4973-961f-7566bb7c9652.png)
+- 항목들이 순서대로 나열, 각 항목들은 위치를 가짐.  
+![image](https://user-images.githubusercontent.com/79950504/188536126-879dc9b7-9db8-4973-961f-7566bb7c9652.png)  
 #### 파이썬에서 리스트가 필요한 경우
 - 파이썬의 리스트 사용.
 - 자료구조 리스트를 배열 구조로 구현한 클래스.
