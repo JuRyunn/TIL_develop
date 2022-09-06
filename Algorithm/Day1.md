@@ -25,7 +25,7 @@ III. 바열 A의 모든 요소를 비교했으면 max를 반환한다.
 ```
 
 ##### 2. 흐름도로 표시하는 방법
-![프레젠테이션1](https://user-images.githubusercontent.com/79950504/188528422-d1402430-756d-484d-95e9-419b2c96dd2f.png)
+![image](https://user-images.githubusercontent.com/79950504/188528493-b78628c5-e16b-43b5-afb5-5cd41f833d63.png)
 
 
 ##### 3. 유사코드로 기술하는 방법
