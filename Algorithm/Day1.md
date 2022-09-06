@@ -276,7 +276,6 @@ def gcd(a, b): # a가 b보다 작지 않아야함.
 #### 파이썬의 딕셔너리
 ![image](https://user-images.githubusercontent.com/79950504/188537337-5bc16092-29b6-440b-beb3-9001e0fdd9eb.png)
 
-- 
 
 
 
