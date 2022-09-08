@@ -7,6 +7,7 @@
 #### 비지도 학습(Unsupervised Learning)
 - 학습 데이터는 있지만 목표값이 주어지지 않음.
 - K-Means 등 알고리즘을 이용하여 목표값 생성.  
+
 ![image](https://user-images.githubusercontent.com/79950504/189032434-3924c4c6-0181-451f-abf2-6c664a3a0d3d.png)
 
 
