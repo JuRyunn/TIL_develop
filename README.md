@@ -26,7 +26,7 @@
 
 <br>
 
-## 📌 Algorithm / MachineRunning
+## 📌 Algorithm / Machine Learning
 #### [Algorithm](https://github.com/JuRyunn/TIL_develop/tree/main/Algorithm)
-#### [MuchineRunning](https://github.com/JuRyunn/TIL_develop/tree/main/MachineRunning)
+#### [MuchineLearning](https://github.com/JuRyunn/TIL_develop/tree/main/MachineRunning)
 
