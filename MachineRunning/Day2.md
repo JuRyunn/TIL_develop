@@ -38,3 +38,62 @@ kn= kn.fit(train_input, train_target)
 kn.score(test_input, test_target)
 0.0
 ```
+
+<br>
+
+## 샘플링의 편향
+#### 잘못된 훈련 데이터
+- 훈련 세트와 테스트 세트의 데이터 특성이 완전이 배타적
+- A 데이터에 대한 학습만을 실시.
+- Model은 B를 구분할 정보가 없음 (= 훈련 세트가 편향됨)
+
+#### 올바른 훈련 데이터
+- 훈련 세트와 테스트 세트는 구분하려는 데이터가 유사한 비율로 섞여 있어야한다.
+
+<br>
+
+## Numpy 사용하기
+``` python
+impoty numpy as np
+
+input_arr= np.array(fish_data)
+target_arr= np.array(fish_target)
+
+print(input_arr)
+```
+- np.array(): List를 Array로 변경시켜준다.
+- Numpy array가 되면 Vector 연산이 가능해지며 다차원 배열 처리가 수월해진다.
+- 함수 실행은 대부분 C언어 처리되어 빠르다.
+
+<br>
+
+## 데이터 섞기
+```python
+np.random.seed(42) # seed(값)을 지정하면 같은 random이지만 같은 sequence를 얻을 수 있음
+
+index= np.arange(49)
+np.random.suffle(index)
+
+[13 15 16 45 47 97 33 43 23 32 12 54 67 72 39 10 39 47 75 88 92 ...]
+
+train_input= input_arr[index[:35]]   # index를 랜덤으로 생성하며 A, B가 구분되어 있는
+train_target= target_arr[index[:35]] # 데이터를 섞어준다.
+```
+
+<br>
+
+## 데이터 나누고 섞어주기
+```python
+test_input= input_arr[index[35:]]
+test_target= target_arr[index[35:]]
+
+import matplotlib.pyploy as plt
+
+plt.scatter(train_input[:, 0], train_input[:, 1])
+plt.scatter(test_input[:, 0], test_input[:, 1])
+
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+```
+
