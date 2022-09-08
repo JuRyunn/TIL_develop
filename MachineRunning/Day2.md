@@ -54,7 +54,7 @@ kn.score(test_input, test_target)
 
 ## Numpy 사용하기
 ``` python
-impoty numpy as np
+import numpy as np
 
 input_arr= np.array(fish_data)
 target_arr= np.array(fish_target)
@@ -100,10 +100,91 @@ plt.show()
 
 <br>
 
-## 2nd MuchineRunning Programming
-```python
+##  Numpy로 데이터 준비
+```Python
+fish_data= np.column_stack((fish_length, fish_weight))
+[[25.4 252.] [26.3 290.] [26.5 340.] [29. 363.] [29. 430.]]
 
-
+fish_target= np.concatenate((np.ones(35), np,zeros(14)))
+[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1.1. 0. 0.0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 ```
-- 훈련 세트에 A와 B 정보를 모두 포함시켰으므로 테스트 세트에 대해서도 정확한 출력값이 도출됨.
-- 정확도 1.0은 테스트 세트와 훈련 세트의 데이터 간 유사성이 크다는 의미 -> 학습 했다고 항상 1.0의 결과를 도출하는것은 아님.
+
+## 사이킷런으로 데이터 나누기
+```python
+from sklearn.model_selection import train_test_split
+
+train_input, test_input, train_target, test_target= train_test_split(fish_data, fish_target, stratify= fish_target, random_state=42)
+```
+
+#### 수상한 도미
+```python
+from sklearn.neighbors import KNeighborsClassifier
+
+kn= KNeighborsClassifier()
+kn.fit(train_input, train_target)
+kn.score(test_input, test_target)
+1.0
+
+print(kn.predict([[25, 150]]))
+[0.]
+
+distancees, indexes= kn.kneighbors([[25, 150]])
+plt.scatter(train_input[:0], train_input[:1])
+plt.scatter(25, 150, marker= '^')
+plt.scatter(train_input[indexes, 0], train_input[indexes, 1], marker= 'D')
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+```
+
+#### 기준 맞추기
+```python
+plt.scatter(train_input[:, 0], train_input[:, 1])
+plt.scatter(25, 150, marker= '^')
+plt.scatter(train_inpit[indexes, 0], train_input[indexes, 1], marker= 'D')
+plt.xlim((0, 1000))
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+```
+
+#### 표준 점수로 바꾸기
+```python
+mean= np.mean(train_input, axis= 0)
+std= np.std(train_input, axis= 0)
+
+print(maen, std)[27.29722222 454.09722222] [9.98244253 323.29893931]
+train_scaled= (train_input - mean) / std
+```
+
+#### 수상한 도미 다시 표현
+```python
+new= ([25, 150] - mean) / std
+
+plt.scatter(train_scaled[:, 0], train_scaled[:, 1])
+plt.scatter(new[0], new[1], marker= '^')
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+```
+
+#### 전처리 데이터 훈련 모델
+```python
+kn.fit(train_scaled, train_target)
+test_scaled= (test_input - mean) / std
+kn.score(test_scaled, test_target)
+1.0
+
+print(kn.predict([new]))
+[1.]
+
+distances, indexes= kn.kneighbors([new])
+
+plt.scatter(train_scaled[:, 0], train_scaled[:, 1])
+plt.scatter(new[0], new[1], marker= '^')
+plt.scatter(train_scaled[idexes, 0], train_scaled[indexes, 1], marker= 'D')
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+```
