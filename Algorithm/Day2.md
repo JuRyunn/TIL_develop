@@ -41,4 +41,24 @@ print("실행시간= ", end-start) # 실제 실행시간 출력. (종료 - 시�
 - 이 연산이 실행되는 횟수만을 계산.
 - ex: 다중 루프의 경우 가장 안쪽 루프에 있는 연산
 
+#### 최선/최악/평균 효율성
+![image](https://user-images.githubusercontent.com/79950504/189781184-3547875c-809a-46b8-b8e4-3937b9740e3c.png)  
+- 입력의 종류 또는 구성에 따라 다른 특성의 실행시간.
+- 최선의 경우 (best case): 실행시간이 가장 적은 경우로써 알고리즘 분석에서는 큰 의미가 없다.
+- 평균적인 경우 (average case): 알고리즘의 모든 입력을 고려하고 각 입력이 바랭할 확률을 고려한 평균적인 실행시간을 의미하는데 정확하게 계산하기 어렵다.
+- 최악의 경우 (worst case): 입력의 구성이 알고리즘의 실행시간을 가장 많이 요구하는 경우를 말하는데 가장 중요하게 사용된다.
+
+![image](https://user-images.githubusercontent.com/79950504/189781552-d3feb183-9bf3-43dd-96bb-884ac295f40a.png)
+
+```python
+def sequential_search(A, key):
+  for i in range(len(A)):
+    if A[i] == key:
+      return i
+    return -1
+```
+
+
+
+
 
