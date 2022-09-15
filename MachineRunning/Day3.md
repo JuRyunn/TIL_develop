@@ -110,3 +110,38 @@ print(knr.score(test_input, test_target))
 - 학습 데이터로 주어지지 않은 범위에 대한 예측도 필요.
 - 무게=15*길이-37 (y=ax+b) 형태로 비례식을 만들어 줌.
 - 이 때, 예측과 타겟의 오차가 최소화 되는 a와 b를 찾아줌.
+
+<br>
+
+## 학습 데이터 값 범위를 넘어서는 데이터
+![image](https://user-images.githubusercontent.com/79950504/190322207-a171bd40-f762-4538-873a-8d4d21ae5afe.png)  
+
+```python
+distances, indexes= knr.kneighbors([[50]])
+
+plt.scatter(train_input, train_target)
+plt.scatter(train_input[indexes], train_target[indexes], maker= 'D')
+plt.scatter(50, 1033, marker= '^')
+plt.show()
+```
+
+#### 선형회귀의 결과
+![image](https://user-images.githubusercontent.com/79950504/190322963-fe5b1cc5-60ab-43ce-8658-9b1b0b5f1cc2.png)  
+
+<br>
+
+## 선형회귀에 사용되는 함수
+```python
+from sklearn.linear_model import LinearRegression
+
+lr= LinearRegression()
+lr.fit(train_input, train_target)
+
+print(lr.predict([[50]])
+[1241.83860323]
+
+print(lr.coef_, lr.intercept_)
+[39.01714496] -709.0186449535477
+```
+
+
