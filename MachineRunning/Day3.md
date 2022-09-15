@@ -100,6 +100,10 @@ print(knr.score(test_input, test_target))
 <br>
 
 # 선형회귀
+
+<br>
+
+
 ## 선형회귀가 필요한 상황
 #### K- 최근접이웃 회귀 모델의 문제점
 - 학습 데이터로 주어진 7~45cm에 정확한 모델.
@@ -144,4 +148,47 @@ print(lr.coef_, lr.intercept_)
 [39.01714496] -709.0186449535477
 ```
 
+#### 선형회귀 결과 확인
+![image](https://user-images.githubusercontent.com/79950504/190324535-04652866-573c-46ea-b38b-54eeb86ad9a6.png)  
+
+```python
+plt.scatter(train_target, train_target)
+plt.plot([15, 50], [15*lr.coef_+lr.intercept_, 50 * lr.coef_ + lr.intercept])
+
+plt.scatter(50, 1241.8, marker= '^')
+plt.show()
+
+print(lr.score(train_input, train_target))
+print(lr.score(test_input, test_target))
+```
+
+#### 다항회귀
+![image](https://user-images.githubusercontent.com/79950504/190326565-3831c8c0-efb2-48ff-a6a4-45d720c76609.png)  
+```python
+train_poly= np.column_stack((train_input ** 2, train_input))
+train_poly= np.column_stack((train_input ** 2, train_input))
+```
+- 2차 함수 사용.
+
+#### 다항회귀의 결과
+![image](https://user-images.githubusercontent.com/79950504/190327136-c9814d78-0c07-40d8-9e78-858a0f3936bb.png)  
+
+```python
+lr= LinearRegression()
+lr.fit(train_poly, train_target)
+
+print(lr.predict([[50**2], 50]))
+print(lr.coef_, lr.intercept_)
+
+point= np.arange(15, 50)
+
+plt.scatter(train_input, train_target)
+plt.plot(point, 1.01 * point ** 2 - 21.6 * point + 116.05)
+
+plt.scatter([50], [1574], marker= '^')
+plt.show()
+
+print(lr.score(train_poly, train_target))
+print(lr.score(test_poly, test_target))
+```
 
